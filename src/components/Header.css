@@ -1,0 +1,23 @@
+.header {
+    background-image: url('/background.svg'); /* Path to your SVG file */
+    background-size: contain; /* Ensures original size of the background */
+    background-repeat: no-repeat; /* Prevents tiling of the image */
+    background-position: center center; /* Centers the background image */
+    width: 100%;
+    height: 300px; /* You can adjust the height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color, if needed */
+  }
+  
+  .header-content {
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      height: 200px; /* Adjust height for smaller screens */
+    }
+  }
+  
