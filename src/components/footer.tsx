@@ -12,9 +12,9 @@ const Footer: React.FC = () => {
     >
       <div className="container mx-auto px-6">
         {/* Footer Content - Two Sections */}
-        <div className=" flex justify-between items-start space-x-16">
+        <div className="flex justify-between items-start space-x-16">
           {/* Left Section: Logo and Description */}
-          <div className=" flex flex-col items-start w-1/5">
+          <div className="flex flex-col items-start w-1/5">
             <img
               src="/images/logo.svg"
               alt="Creative Cubs Logo"
@@ -28,13 +28,12 @@ const Footer: React.FC = () => {
               inspire imagination, learning, and growth. Join us to spark
               creativity!
             </p>
-            
+
             <img
               src="/images/unleas 1.svg"
               alt="Creative Cubs Logo"
-              className=" h-50"
+              className="h-50"
             />
-          
           </div>
           {/* Middle Section: Useful Links */}
           <div className="flex flex-col items-start space-y-2 w-1/5">
@@ -97,20 +96,65 @@ const Footer: React.FC = () => {
             </ul>
           </div>
           <div className="flex flex-col items-start w-1/5">
-          <h3 className="text-black text-xl font-semibold">
-            Copyright & Privacy
-          </h3>
-          <p className="text-black">
-            © 2025 Creative Cubs. All rights reserved.
-          </p>
+            <h3 className="text-black text-xl font-semibold">
+              Copyright & Privacy
+            </h3>
+            <p className="text-black">
+              © 2025 Creative Cubs. All rights reserved.
+            </p>
+            <div className="flex flex-col items-center mt-20 space-y-4">
+              <p className="text-white">Get in touch with us</p>
+              <div className="flex space-x-4">
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="images/Facebook.svg"
+                    alt="Facebook"
+                    className="h-6 w-6"
+                  />
+                </a>
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="images/Twitter Bird.svg"
+                    alt="Twitter"
+                    className="h-6 w-6"
+                  />
+                </a>
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="images/Instagram Circle.svg"
+                    alt="Instagram"
+                    className="h-6 w-6"
+                  />
+                </a>
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="images/YouTube.svg"
+                    alt="YouTube"
+                    className="h-6 w-6"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        </div>
-        
 
         {/* Bottom Section: Contact Section */}
-        <div className="text-center mt-8">
-          <p className="text-black">Get in touch with us</p>
-        </div>
       </div>
     </footer>
   );
