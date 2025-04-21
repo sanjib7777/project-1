@@ -2,17 +2,14 @@ import React from "react";
 
 const Footer: React.FC = () => {
   return (
+    
     <footer
-      className="bg-cover bg-center py-12"
-      style={{
-        backgroundImage: "url('/images/footer-bg.jpg')",
-        backgroundSize: "auto 100%",
-        backgroundRepeat: "repeat",
-      }}
+    className="relative w-full h-[400px] bg-cover bg-center mt-5 z-0"
+    style={{ backgroundImage: "url('/images/footer-bg.jpg')" }}
     >
       <div className="container mx-auto px-6">
         {/* Footer Content - Two Sections */}
-        <div className="flex justify-between items-start space-x-16">
+        <div className="flex  justify-between items-start space-x-16">
           {/* Left Section: Logo and Description */}
           <div className="flex flex-col items-start w-1/5">
             <img
@@ -22,7 +19,7 @@ const Footer: React.FC = () => {
             />
           </div>
 
-          <div className="flex flex-col w-1/5">
+          <div className="flex flex-col mt-10 w-1/5">
             <p className="text-black text-lg">
               Creative Cubs connects kids with fun, engaging workshops that
               inspire imagination, learning, and growth. Join us to spark
@@ -36,7 +33,7 @@ const Footer: React.FC = () => {
             />
           </div>
           {/* Middle Section: Useful Links */}
-          <div className="flex flex-col items-start space-y-2 w-1/5">
+          <div className="flex flex-col mt-10 items-start mt space-y-2 w-1/5">
             <h3 className="text-black text-xl font-semibold">Useful Links</h3>
             <ul className="text-black space-y-1">
               <li>
@@ -73,7 +70,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Right Section: Social Media and Parent Resources */}
-          <div className="flex flex-col items-start w-1/5">
+          <div className="flex flex-col mt-10 items-start w-1/5">
             <h3 className="text-black text-xl font-semibold">
               Parent Resources
             </h3>
@@ -95,7 +92,7 @@ const Footer: React.FC = () => {
               </li>
             </ul>
           </div>
-          <div className="flex flex-col items-start w-1/5">
+          <div className="flex flex-col mt-10 items-start w-1/5">
             <h3 className="text-black text-xl font-semibold">
               Copyright & Privacy
             </h3>
@@ -157,6 +154,7 @@ const Footer: React.FC = () => {
         {/* Bottom Section: Contact Section */}
       </div>
     </footer>
+   
   );
 };
 

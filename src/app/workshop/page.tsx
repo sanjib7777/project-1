@@ -1,10 +1,16 @@
-import Image from "next/image";
+import React from "react";
+import Card from "@/components/Card";
+import Header from "@/components/header";
+import Footer from "@/components/footer"; 
+import WorkshopCard from "@/components/WorkshopCard";
 
-
-export default function Home() {
+const BackgroundImageWithOverlay = () => {
   return (
     <div>
-      This is workshop page.
+      <Header />
+      <WorkshopCard/>
     </div>
   );
-}
+};
+
+export default BackgroundImageWithOverlay;
